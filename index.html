@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Oluwayomi Favour - Full-Stack Developer & Multimedia Professional Portfolio" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, Multimedia, Full-Stack Developer, Portfolio" />
+  <meta name="author" content="Oluwayomi Favour Ogunniyi" />
+  <title>Oluwayomi Favour | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Oluwayomi Favour Ogunniyi</h1>
+    </div>
+  </header>
+
+  <!-- Profile Picture + Dark Mode -->
+  <div class="profile-section">
+    <label for="profileUpload">
+      <img id="profileImage" src="Images/Profile Pix.png" alt="Profile" />
+    </label>
+    <input type="file" id="profileUpload" accept="image/*" />    
+  </div>
+  
+  <!-- Place this below the header -->
+<div class="Toggle">
+  <button id="darkModeToggle">🌙</button>
+</div>
+
+
+  <section id="hero" class="animate fade-in">
+    <h2>Full-Stack Developer & Multimedia Professional</h2>
+    <p>Experienced in software development, system analysis, and digital media/multimedia.</p>
+  </section>
+
+  <section id="about" class="animate slide-in">
+    <h2>About Me</h2>
+    <p>A Computer Science graduate from the University of Capecoast, Ghana and passionate full-stack developer with a flair for both code and creativity. As a tech enthusiast, I thrive on building digital solutions that merge functionality with engaging design. With experience in software development, system analysis, and multimedia production, I bring together skills in Java, HTML/CSS, JavaScript, and Adobe Suite to deliver impactful, user-focused projects. Whether coding a backend system or designing a visual brand, I enjoy exploring how technology can solve real-world problems in smarter ways.</p>
+  </section>
+
+  <section id="projects" class="animate fade-in">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">Project 1: <br><strong>theqlip.digital</strong><br><small>Service portfolio site</small></div>
+      <div class="card">Project 2</div>
+      <div class="card">Project 3</div>
+      <div class="card">Project 4</div>
+    </div>
+  </section>
+
+  <section id="skills" class="animate slide-in">
+    <h2>Skills</h2>
+    <div class="logos">
+        <div class="skill">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" title="HTML5" />
+        <span>HTML</span>
+        </div>
+    <div class="skill">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" title="CSS3" />
+        <span>CSS</span>
+        </div>
+    <div class="skill">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" />
+        <span>JavaScript</span>
+        </div>
+    <div class="skill">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Adobe Photoshop" title="Adobe Photoshop" />
+        <span>Adobe Photoshop</span>
+        </div>
+    <div class="skill">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Adobe Illustrator" title="Adobe Illustrator" />
+        <span>Adobe Illustrator</span>
+        </div>
+    <div class="skill">
+    <img src="images/Animate.png" alt="Adobe Animate" title="Adobe Animate" />
+        <span>Adobe Animate</span>
+        </div>
+    <div class="skill">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maya/maya-original.svg" alt="Autodesk Maya" title="Autodesk Maya" />
+        <span>Maya</span>
+        </div>
+    <div class="skill">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" title="GitHub" />
+        <span>github</span>
+        </div>
+    <div class="skill">
+    <img src="https://static.canva.com/static/images/favicon.ico" alt="Canva" title="Canva" style="border-radius: 10px;" />
+        <span>Canva</span>
+        </div>
+    <div class="skill"><
+    <img src="images/Capcut.png" alt="CapCut" title="CapCut" />
+        <span>Capcut</span>
+        </div>
+  </div>
+  </section>
+
+  <section id="Res" class="Res">
+    <h2>Resume</h2>
+  </section>
+  <section id="resume" class="animate fade-in">
+    <a href="Oluwayomi_Favour_CV.pdf" download class="btn">Download Resume</a>
+  </section>
+
+  <section id="contact" class="animate slide-in">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Oluwayomi Favour Ogunniyi</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("YOUR_EMAILJS_USER_ID");
+    })();
+  </script>
+</body>
+</html>
